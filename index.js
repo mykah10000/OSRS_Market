@@ -119,7 +119,7 @@ async function resetFilters(){
 }
 async function loadItems(page = 1, searchContents = "") {
             // const response = await fetch(`/api/items?page=${page}&search=${searchContents}`);
-            const response = await fetch(`http://127.0.0.1:3000/api/items?page=${page}&search=${searchContents}&filter=${filter}&filterOrder=${filterOrder}`);
+            const response = await fetch(`http://74.140.130.238:8080/api/items?page=${page}&search=${searchContents}&filter=${filter}&filterOrder=${filterOrder}`);
             const data = await response.json();
             itemsLength = data.total;
             const container = document.getElementById("items");
@@ -128,7 +128,7 @@ async function loadItems(page = 1, searchContents = "") {
             (data.items).forEach(item => {
                 container.innerHTML += `
                     <div class="item">
-                        <a href="http://127.0.0.1:3000/item?item_id=${item.item_id}"><strong>${item.item_name}</strong></a><br>
+                        <a href="http://74.140.130.238:8080/item?item_id=${item.item_id}"><strong>${item.item_name}</strong></a><br>
                         $${item.price}
                     </div>
                 `;
