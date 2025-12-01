@@ -4,7 +4,7 @@ async function loadImage(item_id = 2){
     document.getElementById("image").src = `https://services.runescape.com/m=itemdb_rs/obj_sprite.gif?id=${item_id}`;
 }
 async function loadItems(item_id = 2){
-    const response = await fetch(`http://74.140.130.238:8080/api/item_details?item_id=${item_id}`);
+    const response = await fetch(`https://api.osrs.market/api/item_details?item_id=${item_id}`);
     const data = await response.json();
     const details = data[0];
     document.getElementById("item_limit").innerHTML = `Item Limit is: ${details.item_limit}`;
