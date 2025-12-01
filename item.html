@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OSRS-Market-Tracker</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logoDiv">
+      <img class="gold_img" src="https://oldschool.runescape.wiki/images/thumb/Coins_detail.png/800px-Coins_detail.png?404bc"/>
+      <h1><a href="http://127.0.0.1:3000/">OSRS Market</a></h1>
+      </div>
+        <div id="top_items"><h2>Top Items</h2></div>
+        <div id="flips"><h2>Flips</h2></div>
+        <div id="about"><h2><a href="http://127.0.0.1:3000/about">About</a></h2></div>
+      <div class="searchDiv">
+      <input id ="search" type="search" placeholder = "Search..."></input>
+      </div>
+    </nav>
+    <div class = "filter">
+      <img id="image" src="https://services.runescape.com/m=itemdb_rs/obj_sprite.gif?id=2"/>
+      <h1><div id="item_name"></div></h1>
+    </div>
+    
+    <div id="details">
+        <div class="details" id="item_limit"></div>
+        <div class="details" id="high_alch"></div>
+        <div class="details" id="low_alch"></div>
+        <div class="details" id="item_examine"></div>
+        <div class="details" id="item_id"></div>
+        <div class="details" id="members"></div>
+        <div class="details" id="price"></div>
+        <div class="details" id="volume"></div>
+        <div class="details" id="updated_at"></div>
+    </div>
+    <script src="item.js"></script>
+  </body>
+</html>
