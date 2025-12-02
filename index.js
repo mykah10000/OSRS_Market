@@ -128,7 +128,7 @@ async function loadItems(page = 1, searchContents = "") {
             (data.items).forEach(item => {
                 container.innerHTML += `
                     <div class="item">
-                        <a href="https://api.osrs.market/item?item_id=${item.item_id}"><strong>${item.item_name}</strong></a><br>
+                        <a href="https://osrs.market/item?item_id=${item.item_id}"><strong>${item.item_name}</strong></a><br>
                         $${item.price}
                     </div>
                 `;
