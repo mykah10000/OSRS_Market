@@ -2,7 +2,7 @@ const params = new URLSearchParams(window.location.search);
 let currentPage = params.get("page") || 1;
 let search = params.get("search") || "";
 let filterOrder = "asc";
-let filter = "id";
+let filter = "item_id";
 let itemsLength = 0;
 
 
